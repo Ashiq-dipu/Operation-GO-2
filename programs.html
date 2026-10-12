@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocational Programs &amp; CTE Matrix | Operation GO Rochester</title>
+  <meta name="description" content="Explore Operation GO's 8 career-readiness programs for Rochester youth ages 12–18: Construction trades, sneaker production, summer employment, media, and real estate.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div class="ambient-glow-top"></div>
+  <div class="scroll-backdrop-glow" id="scrollBackdropGlow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <span>★ NOW ENROLLING: Summer Youth Employment Cohort (Paid Stipends) &bull; Ages 14–18.</span>
+    <a href="#" data-open-modal="studentApplyModal">Apply Today →</a>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Operation GO Home">
+        <img src="images/logo.png" alt="Operation GO" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link active">Programs</a>
+        <a href="careers.html" class="nav-link">
+          Careers <span class="nav-link-badge">HIRING</span>
+        </a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="impact.html" class="nav-link">Impact &amp; Press</a>
+        <a href="support-us.html" class="nav-link">Support Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-amber btn-sm" data-open-modal="studentApplyModal">Student Apply</button>
+        <a href="careers.html" class="btn btn-primary btn-sm">Teach A Trade</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Programs Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="mono-tag">[ COMPREHENSIVE CTE CURRICULUM ]</span>
+        <h1 class="display-title">PROGRAMS &amp; CAREER TRACKS</h1>
+        <p class="section-subtitle">
+          Eight dynamic pathways engineered to turn hands-on passion into industry certifications, paid stipends, and lifelong careers. Free for Rochester students ages 12–18.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Program Curriculum Matrix Table -->
+  <section class="section-sm" style="padding-top: 50px;">
+    <div class="container">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: var(--radius-md); overflow-x: auto; box-shadow: var(--shadow-card);">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; min-width: 780px;">
+          <thead>
+            <tr style="background: var(--bg-surface); border-bottom: 2px solid var(--border-strong); font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-amber); text-transform: uppercase;">
+              <th style="padding: 18px 24px;">Program Track</th>
+              <th style="padding: 18px 20px;">Ages</th>
+              <th style="padding: 18px 20px;">Duration</th>
+              <th style="padding: 18px 24px;">Key Skills &amp; Certifications</th>
+              <th style="padding: 18px 24px;">Direct Outcome</th>
+              <th style="padding: 18px 20px; text-align: right;">Action</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 0.92rem; divide-y: 1px solid var(--border-subtle);">
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">01</span> Construction &amp; Trades
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">14–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">16 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Wood framing, power tool safety, OSHA-10, blueprints</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Union Apprenticeship Entry</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#construction" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle); background: rgba(255,94,0,0.02);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">02</span> Summer Youth Employment
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">14–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">6–8 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Jobsite builds, team leadership, public showcase</td>
+              <td style="padding: 20px 24px; color: var(--accent-amber); font-weight: 700;">Paid Hourly Stipends ($16/hr)</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#summer" class="btn btn-primary btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">03</span> Apparel &amp; Sneaker Lab
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">12–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">12 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Footwear reconstruction, sewing machines, brand launch</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Small-Batch Brand Pop-Up</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#sneaker" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">04</span> Video Production &amp; Media
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">13–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">14 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Cinema 4K cameras, DaVinci Resolve editing, audio gear</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Client Production Portfolio</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#media" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">05</span> Real Estate &amp; Financial Literacy
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">15–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">10 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Property evaluation, credit scoring, wealth models</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Banking &amp; Real Estate Cert</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#realestate" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">06</span> Entrepreneurship &amp; Pitch Lab
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">13–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">12 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Business planning, cost-of-goods, pitch deck delivery</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Micro-Grant Seed Capital</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#entrepreneurship" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">07</span> Public Speaking &amp; Leadership
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">12–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">8 Weeks</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">Stage presence, job interview mastery, civic engagement</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">Showcase Keynote Presenter</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#leadership" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 20px 24px; font-weight: 700; color: #FFF; font-family: var(--font-display); font-size: 1.25rem;">
+                <span style="color: var(--accent-amber);">08</span> Academic Support &amp; Credit Recovery
+              </td>
+              <td style="padding: 20px; font-family: var(--font-mono); color: var(--text-secondary);">12–18</td>
+              <td style="padding: 20px; color: var(--text-secondary);">Ongoing</td>
+              <td style="padding: 20px 24px; color: var(--text-secondary);">STEM tutoring, math for trades, school district alignment</td>
+              <td style="padding: 20px 24px; color: var(--accent-cyan); font-weight: 600;">High School Diploma On-Time</td>
+              <td style="padding: 20px; text-align: right;">
+                <a href="#academic" class="btn btn-outline-amber btn-sm">Explore</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Track 1: Construction & Trades -->
+  <section class="section" id="construction">
+    <div class="container">
+      <div class="founder-story-grid">
+        <div class="founder-portrait-frame">
+          <img src="images/blueprint-class.jpg" alt="Construction Training Lab" class="founder-img">
+          <div class="founder-caption-box">
+            <div class="founder-name">FLAGSHIP VOCATIONAL LAB</div>
+            <div class="founder-creds">OSHA-10 COMPLIANT &bull; TOOL SAFETY RIGOR</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="mono-tag">[ TRACK 01 &bull; THE FOUNDATION ]</span>
+          <h2 class="section-title" style="margin: 12px 0 16px;">CONSTRUCTION &amp; TRADES PROGRAM</h2>
+          <p class="story-lead">
+            Where carpentry becomes a career. Students master wood framing, power tools, safety standards, and structural craftsmanship under licensed master contractors.
+          </p>
+          <div style="margin: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Curriculum:</strong> 2x4 and 2x6 timber framing, roof trusses, miter and circular saws, levels, laser measuring.</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Facility Scope:</strong> Delivered at our main Rochester vocational workshop, community park build sites, and through specialized security partnerships in local juvenile justice and secure youth facilities.</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Certification:</strong> Official OSHA-10 Construction card and Operation GO Tool Safety Certification.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal="studentApplyModal">Enroll in Trades Track</button>
+            <a href="careers.html" class="btn btn-secondary">Apply as Carpentry Instructor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Track 2: Summer Youth Employment -->
+  <section class="section section-surface" id="summer">
+    <div class="container">
+      <div class="founder-story-grid">
+        <div>
+          <span class="mono-tag blue">[ TRACK 02 &bull; PAID WORKFORCE IMMERSION ]</span>
+          <h2 class="section-title" style="margin: 12px 0 16px;">SUMMER YOUTH EMPLOYMENT PROGRAM</h2>
+          <p class="story-lead">
+            A 6–8 week paid summer intensive where youth build real community architecture and earn hourly wages, culminating in an acclaimed public showcase.
+          </p>
+          <p class="story-text" style="margin-top: 14px;">
+            Mirrored in regional press coverage by WHAM13 and WXXI, our Summer Youth Employment program gives students real job expectations, clock-in discipline, direct deposit paychecks, and the pride of constructing community pavilions and garden gazebos across Rochester.
+          </p>
+          <div style="margin: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">★</span>
+              <span><strong>Culminating Event:</strong> City-wide public exhibition with business leaders, parents, and press celebrating student projects.</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">★</span>
+              <span><strong>Financial Dignity:</strong> Youth take home over $1,200 to $1,800 in earned income to support themselves and their households.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal="studentApplyModal">Apply for Summer Cohort</button>
+            <a href="impact.html" class="btn btn-secondary">View Showcase Gallery &amp; Press</a>
+          </div>
+        </div>
+
+        <div class="founder-portrait-frame">
+          <img src="images/construction-student.jpg" alt="Graduation Showcase Event" class="founder-img">
+          <div class="founder-caption-box">
+            <div class="founder-name">SUMMER SHOWCASE EXHIBITION</div>
+            <div class="founder-creds">COMMUNITY CELEBRATION &bull; REAL PUBLIC STRUCTURES</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Track 3 & 4: Sneaker Lab & Video Media -->
+  <section class="section">
+    <div class="container">
+      <div class="dual-engine-grid">
+        <!-- Sneaker Lab -->
+        <div class="dual-card" id="sneaker" style="background: var(--bg-card);">
+          <span class="mono-tag">[ TRACK 03 &bull; MANUFACTURING &amp; FASHION ]</span>
+          <h3 class="dual-card-title" style="margin-top: 12px;">APPAREL &amp; SNEAKER LAB</h3>
+          <p class="dual-card-desc">
+            Students learn industrial footwear deconstruction, pattern drafting, leatherworking, heavy sewing machine operation, and streetwear brand creation.
+          </p>
+          <div class="dual-card-bullets">
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span>Footwear sole swapping, stitching, and custom paint techniques</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span>Brand identity, packaging design, and e-commerce pop-up stores</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" data-open-modal="studentApplyModal">Apply to Sneaker Lab</button>
+        </div>
+
+        <!-- Video Media -->
+        <div class="dual-card" id="media" style="background: var(--bg-card);">
+          <span class="mono-tag blue">[ TRACK 04 &bull; DIGITAL CRAFTSMANSHIP ]</span>
+          <h3 class="dual-card-title" style="margin-top: 12px;">VIDEO PRODUCTION &amp; MEDIA</h3>
+          <p class="dual-card-desc">
+            Equipping youth with commercial cinema cameras, 3-point studio lighting, boom audio, and professional DaVinci Resolve editing skills.
+          </p>
+          <div class="dual-card-bullets">
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span>Documentary filmmaking covering Operation GO student builds</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span>Commercial video contracts for Rochester non-profits and small businesses</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" data-open-modal="studentApplyModal">Apply to Media Lab</button>
+        </div>
+      </div>
+
+      <!-- Tracks 5, 6, 7, 8 in 4-column Bento -->
+      <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="bento-card" id="realestate" style="padding: 28px;">
+          <span class="mono-tag" style="margin-bottom: 12px;">TRACK 05 &bull; WEALTH</span>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF;">REAL ESTATE &amp; FINANCE</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">
+            Backed by ESL Federal Credit Union. Youth learn budgeting, credit building, property appraisal, and long-term equity creation.
+          </p>
+        </div>
+
+        <div class="bento-card" id="entrepreneurship" style="padding: 28px;">
+          <span class="mono-tag blue" style="margin-bottom: 12px;">TRACK 06 &bull; INCUBATOR</span>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF;">ENTREPRENEURSHIP &amp; PITCH</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">
+            Teens draft business plans, calculate unit economics, and compete in live pitch events for micro-grant seed capital.
+          </p>
+        </div>
+
+        <div class="bento-card" id="leadership" style="padding: 28px;">
+          <span class="mono-tag neutral" style="margin-bottom: 12px;">TRACK 07 &bull; VOICE</span>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF;">PUBLIC SPEAKING &amp; CIVICS</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">
+            Mastering interview skills, stage presence, municipal advocacy, and professional boardroom communication.
+          </p>
+        </div>
+
+        <div class="bento-card" id="academic" style="padding: 28px;">
+          <span class="mono-tag" style="margin-bottom: 12px;">TRACK 08 &bull; MASTERY</span>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF;">ACADEMIC CREDIT RECOVERY</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">
+            Partnered with RCSD to provide applied trades math, tutoring, and high school credit recovery to ensure graduation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Operation GO" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Operating for 14+ years in Rochester, NY. Transforming youth futures through vocational trades training, contractor mentorship, paid summer employment, and career readiness.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Programs</div>
+          <div class="footer-links">
+            <a href="programs.html#construction" class="footer-link">Construction &amp; Trades</a>
+            <a href="programs.html#summer" class="footer-link">Summer Youth Employment</a>
+            <a href="programs.html#sneaker" class="footer-link">Apparel &amp; Sneaker Lab</a>
+            <a href="programs.html#media" class="footer-link">Video &amp; Media Studio</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Organization</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Story &amp; Founder</a>
+            <a href="careers.html" class="footer-link">Careers &bull; Open Jobs</a>
+            <a href="impact.html" class="footer-link">Impact &amp; Press</a>
+            <a href="support-us.html" class="footer-link">Support Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Headquarters</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Operation GO Training Center<br>
+            Rochester, NY 14605<br>
+            Phone: (585) 555-OPGO
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Operation GO Inc. All rights reserved. Registered 501(c)(3) youth workforce organization.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" class="footer-link">Safety Policies</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Student Application Modal -->
+  <div class="modal-overlay" id="studentApplyModal">
+    <div class="modal-window">
+      <button class="modal-close-btn">&times;</button>
+      <div class="mono-tag" style="margin-bottom: 12px;">
+        <span class="tag-dot"></span> [ YOUTH ADMISSIONS &bull; AGES 12–18 ]
+      </div>
+      <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #FFF; line-height: 1.05; margin-bottom: 8px;">
+        APPLY FOR OPERATION GO TRAINING
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+        Free vocational enrollment for Rochester students. Hands-on mentorship, tool kits, and paid summer opportunities.
+      </p>
+
+      <form class="interactive-submit-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Student First Name *</label>
+            <input type="text" class="form-input" required placeholder="Marcus">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Student Last Name *</label>
+            <input type="text" class="form-input" required placeholder="Taylor">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Age (Must be 12–18) *</label>
+            <input type="number" class="form-input" min="12" max="18" required placeholder="16">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current School / District *</label>
+            <input type="text" class="form-input" required placeholder="e.g. East High School, RCSD">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Career Track of Interest *</label>
+          <select class="form-select" required>
+            <option value="construction">Construction &amp; Wood Framing Trades</option>
+            <option value="summer">Summer Youth Employment (Paid Program)</option>
+            <option value="sneaker">Sneaker Reconstruction &amp; Apparel Lab</option>
+            <option value="media">Video Production &amp; Digital Media</option>
+            <option value="business">Youth Entrepreneurship &amp; Pitch Lab</option>
+            <option value="realestate">Real Estate &amp; Financial Literacy</option>
+          </select>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Parent / Guardian Name *</label>
+            <input type="text" class="form-input" required placeholder="Parent or Guardian">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="(585) 555-0199">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          Submit Student Enrollment Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

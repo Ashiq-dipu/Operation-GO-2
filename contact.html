@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &bull; Training Center &amp; Offices | Operation GO Rochester</title>
+  <meta name="description" content="Get in touch with Operation GO in Rochester, NY. Contact student admissions, contractor hiring directors, grant managers, and school referral liaisons.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div class="ambient-glow-top"></div>
+  <div class="scroll-backdrop-glow" id="scrollBackdropGlow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <span>★ OFFICE HOURS: Monday – Friday: 9:00 AM – 6:30 PM &bull; Saturday Workshops: 10:00 AM – 3:00 PM.</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Operation GO Home">
+        <img src="images/logo.png" alt="Operation GO" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="careers.html" class="nav-link">
+          Careers <span class="nav-link-badge">HIRING</span>
+        </a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="impact.html" class="nav-link">Impact &amp; Press</a>
+        <a href="support-us.html" class="nav-link">Support Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-amber btn-sm" data-open-modal="studentApplyModal">Student Apply</button>
+        <a href="careers.html" class="btn btn-primary btn-sm">Teach A Trade</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="mono-tag">[ CONNECT WITH OUR ROCHESTER TEAM ]</span>
+        <h1 class="display-title">CONTACT OPERATION GO</h1>
+        <p class="section-subtitle">
+          Have a question about student enrollment, hiring trade instructors, sponsoring our summer showcase, or visiting our workshop facilities? Reach out directly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Grid -->
+  <section class="section-sm" style="padding-top: 50px;">
+    <div class="container">
+      <div class="founder-story-grid">
+        <!-- Interactive Smart Routing Form -->
+        <div class="bento-card" style="padding: 40px;">
+          <span class="mono-tag" style="margin-bottom: 12px;">SMART INQUIRY ROUTING</span>
+          <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 16px;">SEND US A MESSAGE</h2>
+
+          <form class="interactive-submit-form">
+            <div class="form-group">
+              <label class="form-label">I am contacting Operation GO as a: *</label>
+              <select class="form-select" required>
+                <option value="student">Prospective Student or Trainee (Ages 12–18)</option>
+                <option value="parent">Parent or Legal Guardian</option>
+                <option value="contractor">Trade Contractor / Instructor Applicant</option>
+                <option value="school">School Counselor / District Referral Partner</option>
+                <option value="donor">Donor / Foundation / Corporate Sponsor</option>
+                <option value="press">Journalist / Media Representative</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-input" required placeholder="Alex Morgan">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-input" required placeholder="(585) 555-0177">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-input" required placeholder="alex@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" placeholder="e.g. Question about Summer Carpentry Cohort">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Message *</label>
+              <textarea class="form-textarea" rows="4" required placeholder="How can our Rochester team help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+              Send Message Directly to Program Team
+            </button>
+          </form>
+        </div>
+
+        <!-- Headquarters & Program Specific Contacts -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div class="bento-card" style="padding: 32px; background: var(--bg-surface);">
+            <span class="mono-tag">[ PHYSICAL HEADQUARTERS ]</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #FFF; margin: 12px 0 8px;">ROCHESTER VOCATIONAL HUB</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Operation GO Training Center<br>
+              450 N. Clinton Avenue, Suite 200<br>
+              Rochester, NY 14605
+            </p>
+
+            <div style="margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
+              <div><strong>General Phone:</strong> <span style="color: var(--accent-amber);">(585) 555-6746 (OPGO)</span></div>
+              <div><strong>Admissions Line:</strong> <span style="color: var(--accent-amber);">(585) 555-6747</span></div>
+              <div><strong>General Email:</strong> <span style="color: var(--text-secondary);">info@operationgo-rochester.org</span></div>
+            </div>
+          </div>
+
+          <!-- Specific Department Contacts -->
+          <div class="bento-card" style="padding: 32px;">
+            <span class="mono-tag blue">[ DIRECT DIRECTORY ]</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #FFF; margin: 12px 0 16px;">DEPARTMENT LIAISONS</h3>
+            <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.88rem;">
+              <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+                <strong style="color: #FFF; display: block;">Instructor &amp; Contractor Recruitment</strong>
+                <span style="color: var(--text-muted);">Marcus Vance, Dir. of Trades</span><br>
+                <a href="mailto:hiring@operationgo-rochester.org" style="color: var(--accent-amber);">hiring@operationgo-rochester.org</a>
+              </div>
+              <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+                <strong style="color: #FFF; display: block;">Student Intake &amp; School District Referrals</strong>
+                <span style="color: var(--text-muted);">Elena Brooks, Admissions Coordinator</span><br>
+                <a href="mailto:admissions@operationgo-rochester.org" style="color: var(--accent-cyan);">admissions@operationgo-rochester.org</a>
+              </div>
+              <div>
+                <strong style="color: #FFF; display: block;">Grants, Corporate Sponsorships &amp; Media</strong>
+                <span style="color: var(--text-muted);">Executive Office &bull; Justin Ortiz, CEO</span><br>
+                <a href="mailto:director@operationgo-rochester.org" style="color: var(--accent-amber);">director@operationgo-rochester.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Operation GO" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Operating for 14+ years in Rochester, NY. Transforming youth futures through vocational trades training, contractor mentorship, paid summer employment, and career readiness.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Programs</div>
+          <div class="footer-links">
+            <a href="programs.html" class="footer-link">Construction &amp; Trades</a>
+            <a href="programs.html" class="footer-link">Summer Youth Employment</a>
+            <a href="programs.html" class="footer-link">Apparel &amp; Sneaker Lab</a>
+            <a href="programs.html" class="footer-link">Video &amp; Media Studio</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Quick Links</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Story &amp; Founder</a>
+            <a href="careers.html" class="footer-link">Careers &bull; Open Jobs</a>
+            <a href="impact.html" class="footer-link">Data &amp; Press</a>
+            <a href="support-us.html" class="footer-link">Support &amp; Donate</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Headquarters</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Operation GO Training Center<br>
+            450 N. Clinton Ave, Ste 200<br>
+            Rochester, NY 14605<br>
+            Phone: (585) 555-OPGO
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Operation GO Inc. All rights reserved. Registered 501(c)(3) youth workforce organization.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" class="footer-link">Safety Policies</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  <!-- Student Application Modal -->
+  <div class="modal-overlay" id="studentApplyModal">
+    <div class="modal-window">
+      <button class="modal-close-btn">&times;</button>
+      <div class="mono-tag" style="margin-bottom: 12px;">
+        <span class="tag-dot"></span> [ YOUTH ADMISSIONS &bull; AGES 12–18 ]
+      </div>
+      <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #FFF; line-height: 1.05; margin-bottom: 8px;">
+        APPLY FOR OPERATION GO TRAINING
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+        Free vocational enrollment for Rochester students. Hands-on mentorship, tool kits, and paid summer opportunities.
+      </p>
+
+      <form class="interactive-submit-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Student First Name *</label>
+            <input type="text" class="form-input" required placeholder="Marcus">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Student Last Name *</label>
+            <input type="text" class="form-input" required placeholder="Taylor">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Age (Must be 12–18) *</label>
+            <input type="number" class="form-input" min="12" max="18" required placeholder="16">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current School / District *</label>
+            <input type="text" class="form-input" required placeholder="e.g. East High School, RCSD">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Career Track of Interest *</label>
+          <select class="form-select" required>
+            <option value="construction">Construction &amp; Wood Framing Trades</option>
+            <option value="summer">Summer Youth Employment (Paid Program)</option>
+            <option value="sneaker">Sneaker Reconstruction &amp; Apparel Lab</option>
+            <option value="media">Video Production &amp; Digital Media</option>
+            <option value="business">Youth Entrepreneurship &amp; Pitch Lab</option>
+            <option value="realestate">Real Estate &amp; Financial Literacy</option>
+          </select>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Parent / Guardian Name *</label>
+            <input type="text" class="form-input" required placeholder="Parent or Guardian">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="(585) 555-0199">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          Submit Student Enrollment Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

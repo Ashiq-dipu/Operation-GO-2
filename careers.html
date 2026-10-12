@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers &bull; Instructor &amp; Contractor Hiring Board | Operation GO Rochester</title>
+  <meta name="description" content="We are actively hiring trade instructors, master carpenters, and contractor mentors to train youth in Rochester, NY. Competitive pay ($40–$65/hr), flexible schedules.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('opgo_theme');
+      if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="ambient-glow-top"></div>
+  <div class="scroll-backdrop-glow" id="scrollBackdropGlow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement" style="background: #FFE600; color: #080B10; font-weight: 700;">
+    <span>⚡ URGENT CONTRACT: Construction Teacher Needed — $100/hr ($4,000 for 40 Hours) &bull; Immediate Start. Details below!</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Operation GO Home">
+        <img src="images/logo.png" alt="Operation GO" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="careers.html" class="nav-link active">
+          Careers <span class="nav-link-badge">HIRING</span>
+        </a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="impact.html" class="nav-link">Impact &amp; Press</a>
+        <a href="support-us.html" class="nav-link">Support Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Switch to Calm Light Mode">
+          <span class="theme-icon-sun">☼</span>
+          <span class="theme-icon-moon">☽</span>
+          <span class="theme-toggle-label">Light</span>
+        </button>
+        <button class="btn btn-outline-amber btn-sm" data-open-modal="studentApplyModal">Student Apply</button>
+        <button class="btn btn-primary btn-sm" onclick="openApplyModalWithJob('Trade Instructor')">Quick Apply</button>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Careers Hero Section -->
+  <section class="hero" style="min-height: 75vh; padding: 80px 0 70px;">
+    <div class="hero-backdrop">
+      <img src="assets/images/careers-hero.jpg" alt="Master trades contractor instructing apprentice in Rochester workshop" class="hero-backdrop-img">
+      <div class="hero-backdrop-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div style="max-width: 660px; position: relative; z-index: 2;">
+        <span class="mono-tag" style="margin-bottom: 16px;">
+          <span class="tag-dot"></span> [ TALENT RECRUITMENT &bull; TRADES CONTRACTORS &amp; TEACHERS ]
+        </span>
+        <h1 class="hero-headline" style="font-size: clamp(2.8rem, 5.5vw, 5.2rem);">
+          TEACH YOUR CRAFT.<br>
+          <span class="text-gradient-amber">PASS THE TORCH.</span><br>
+          GET PAID.
+        </h1>
+        <p class="hero-lead" style="margin-top: 20px; max-width: 560px;">
+          Are you a licensed general contractor, master carpenter, electrician, or artisan? Operation GO connects your hard-earned industry mastery with Rochester youth ages 12–18 who are hungry to work with their hands.
+        </p>
+
+        <div class="hero-cta-group" style="margin-top: 28px;">
+          <a href="#openings" class="btn btn-primary btn-lg">Browse Open Positions Below ↓</a>
+          <button class="btn btn-secondary btn-lg" onclick="openApplyModalWithJob('General Contractor Mentor')">Contractor Fast Application</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Instruct at Operation GO -->
+  <section class="section-sm section-surface" id="whyTeach">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="mono-tag">[ CONTRACTOR &amp; INSTRUCTOR BENEFITS ]</span>
+        <h2 class="section-title text-gradient-amber" style="margin-top: 10px;">WHY TEACH WITH OPERATION GO?</h2>
+      </div>
+
+      <div class="bento-programs-grid">
+        <div class="bento-card bento-span-3">
+          <div class="mono-tag">01 &bull; COMPENSATION</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF; margin: 10px 0 6px;">COMPETITIVE HOURLY PAY</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Instructors earn <strong>$40 – $65 / hour</strong> on flexible W2 or 1099 contracts that respect your active contracting schedules.
+          </p>
+        </div>
+
+        <div class="bento-card bento-span-3">
+          <div class="mono-tag blue">02 &bull; ENVIRONMENT</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF; margin: 10px 0 6px;">TOP-TIER TOOL SHOPS</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Work in fully equipped vocational shops with commercial-grade table saws, hand tools, framing rigs, and premium safety PPE.
+          </p>
+        </div>
+
+        <div class="bento-card bento-span-3">
+          <div class="mono-tag">03 &bull; VETTING</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF; margin: 10px 0 6px;">STRUCTURED PROTOCOLS</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            We manage all student discipline, attendance tracking, facility security clearance, and parent communications so you focus on teaching.
+          </p>
+        </div>
+
+        <div class="bento-card bento-span-3">
+          <div class="mono-tag neutral">04 &bull; TALENT</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFF; margin: 10px 0 6px;">RECRUIT YOUR CREW</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Get first access to hire top-performing student graduates as paid apprentices and entry-level laborers on your commercial jobs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Job Board (The ATS Engine) -->
+  <section class="section" id="openings">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="mono-tag">[ LIVE APPLICANT TRACKING SYSTEM ]</span>
+          <h2 class="section-title" style="margin-top: 10px;">ACTIVE INSTRUCTOR &amp; CONTRACTOR OPENINGS</h2>
+          <p class="section-subtitle">
+            Click on any listing below to open the complete job profile, compensation breakdown, and online application.
+          </p>
+        </div>
+        <div>
+          <span class="mono-tag blue">6 POSITIONS AVAILABLE &bull; ROCHESTER, NY</span>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="job-board-filters">
+        <button class="filter-btn job-filter-btn active" data-filter="all">All Departments (6)</button>
+        <button class="filter-btn job-filter-btn" data-filter="trades">Carpentry &amp; Trades (3)</button>
+        <button class="filter-btn job-filter-btn" data-filter="summer">Summer Youth Employment (1)</button>
+        <button class="filter-btn job-filter-btn" data-filter="creative">Sneaker &amp; Media Studio (2)</button>
+      </div>
+
+      <!-- Jobs List -->
+      <div class="jobs-list">
+        <!-- Job 0: Urgent Detention Center $100/hr Contract -->
+        <div class="job-row-card featured-urgent" data-category="trades" data-job-id="detention-carpentry" id="contract-100">
+          <div class="job-info-main">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="urgent-badge-pulse">⚡ URGENT IMMEDIATE START &bull; $100/HR</span>
+              <span class="mono-tag neutral" style="padding: 2px 8px; font-size: 0.72rem;">NO TEACHING LICENSE NEEDED</span>
+            </div>
+            <h4 class="job-title" style="color: #FFF; font-size: 1.45rem; margin-top: 4px;">Construction Teacher — Children's Detention Center</h4>
+            <div class="job-dept">
+              <span>Trades &amp; Secure Facilities</span> &bull; <span>Monroe County Detention Center &bull; Rochester NY</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Contract: <strong>$4,000 Flat Total</strong></div>
+            <div>Term: <strong>Defined 40-Hour Block</strong></div>
+            <div>Future: <strong>High Re-Hire Potential</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation" style="color: #FFE600; font-size: 1.85rem; font-weight: 900;">$100 / hr</div>
+            <div class="job-rate-sub" style="color: #FFF; font-weight: 600;">$4,000 Total &bull; Immediate Start</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <button class="btn btn-primary btn-sm" style="background: #FFE600; color: #080B10; font-weight: 800;">View Spec &amp; Apply Now →</button>
+            <a href="https://link.fostio.com/widget/form/VYgyRcgrcGFfWr5uoKNy" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="font-size: 0.75rem; text-align: center;" onclick="event.stopPropagation();">Direct Fostio Form ↗</a>
+          </div>
+        </div>
+
+        <!-- Job 1 -->
+        <div class="job-row-card" data-category="trades" data-job-id="lead-carpentry">
+          <div class="job-info-main">
+            <span class="mono-tag" style="align-self: flex-start; padding: 2px 8px; font-size: 0.72rem;">CORE POSITION &bull; IMMEDIATE HIRE</span>
+            <h4 class="job-title">Lead Construction &amp; Carpentry Instructor</h4>
+            <div class="job-dept">
+              <span>Vocational Trades Division</span> &bull; <span>Rochester Training Hub &amp; Build Sites</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Type: <strong>Full-Time / W2 or 1099</strong></div>
+            <div>Schedule: <strong>25–35 Hours/Week</strong></div>
+            <div>Clearance: <strong>NYS Youth Vetted</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation">$45 – $65 / hr</div>
+            <div class="job-rate-sub">Direct Deposit &bull; Bi-Weekly</div>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-sm">View Specification &amp; Apply →</button>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job-row-card" data-category="trades" data-job-id="electrical-mentor">
+          <div class="job-info-main">
+            <span class="mono-tag neutral" style="align-self: flex-start; padding: 2px 8px; font-size: 0.72rem;">AFTERSCHOOL / WEEKEND</span>
+            <h4 class="job-title">Electrical &amp; Hand Tools Mentor</h4>
+            <div class="job-dept">
+              <span>Trades Division</span> &bull; <span>Afterschool Lab Sessions</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Type: <strong>Part-Time Contract</strong></div>
+            <div>Schedule: <strong>15–20 Hours/Week</strong></div>
+            <div>Clearance: <strong>NYS Youth Vetted</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation">$40 – $55 / hr</div>
+            <div class="job-rate-sub">Flexible Schedule</div>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-sm">View Specification &amp; Apply →</button>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job-row-card" data-category="summer" data-job-id="summer-superintendent">
+          <div class="job-info-main">
+            <span class="mono-tag blue" style="align-self: flex-start; padding: 2px 8px; font-size: 0.72rem;">SUMMER 2026 CONTRACT</span>
+            <h4 class="job-title">Summer Showcase Project Superintendent</h4>
+            <div class="job-dept">
+              <span>Summer Youth Employment</span> &bull; <span>City-Wide Public Build Sites</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Type: <strong>Seasonal Full-Time</strong></div>
+            <div>Dates: <strong>June 22 – August 14</strong></div>
+            <div>Culmination: <strong>Public Showcase Exhibition</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation">$1,800 – $2,200 / wk</div>
+            <div class="job-rate-sub">Project Stipend Package</div>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-sm">View Specification &amp; Apply →</button>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="job-row-card" data-category="creative" data-job-id="sneaker-instructor">
+          <div class="job-info-main">
+            <span class="mono-tag" style="align-self: flex-start; padding: 2px 8px; font-size: 0.72rem;">CREATIVE MANUFACTURING</span>
+            <h4 class="job-title">Sneaker Lab &amp; Apparel Production Lead</h4>
+            <div class="job-dept">
+              <span>Creative &amp; Manufacturing</span> &bull; <span>Urban Sneaker Studio</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Type: <strong>Part-Time</strong></div>
+            <div>Schedule: <strong>12–18 Hours/Week</strong></div>
+            <div>Clearance: <strong>NYS Youth Vetted</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation">$35 – $48 / hr</div>
+            <div class="job-rate-sub">Small-Batch Footwear Lab</div>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-sm">View Specification &amp; Apply →</button>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="job-row-card" data-category="creative" data-job-id="media-specialist">
+          <div class="job-info-main">
+            <span class="mono-tag neutral" style="align-self: flex-start; padding: 2px 8px; font-size: 0.72rem;">DIGITAL MEDIA</span>
+            <h4 class="job-title">Video Production &amp; Media Lab Director</h4>
+            <div class="job-dept">
+              <span>Storytelling &amp; Press Studio</span> &bull; <span>Rochester Lab</span>
+            </div>
+          </div>
+          <div class="job-details-meta">
+            <div>Type: <strong>Contract / Part-Time</strong></div>
+            <div>Schedule: <strong>15–20 Hours/Week</strong></div>
+            <div>Clearance: <strong>NYS Youth Vetted</strong></div>
+          </div>
+          <div>
+            <div class="job-compensation">$35 – $50 / hr</div>
+            <div class="job-rate-sub">4K Studio Equipment</div>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-sm">View Specification &amp; Apply →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contractor Partnership & Subcontractor Inquiry Form -->
+  <section class="section section-surface" id="contractorPartner">
+    <div class="container container-sm">
+      <div class="section-header text-center">
+        <span class="mono-tag">[ ARE YOU A GENERAL CONTRACTOR? ]</span>
+        <h2 class="section-title" style="margin-top: 10px;">PARTNER YOUR COMPANY WITH OPERATION GO</h2>
+        <p class="section-subtitle">
+          Join 45+ Rochester construction, electrical, and plumbing firms who sponsor workshops, provide guest masterclasses, and recruit vetted youth apprentices.
+        </p>
+      </div>
+
+      <div class="bento-card" style="padding: 40px;">
+        <form class="interactive-submit-form">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Company / Contractor Name *</label>
+              <input type="text" class="form-input" required placeholder="e.g. Vance Builders LLC">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Contact Person &amp; Title *</label>
+              <input type="text" class="form-input" required placeholder="Marcus Vance, Owner">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Phone *</label>
+              <input type="tel" class="form-input" required placeholder="(585) 555-0188">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-input" required placeholder="owner@vancebuilders.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">How would you like to collaborate with Operation GO?</label>
+            <select class="form-select" required>
+              <option value="">Select collaboration type...</option>
+              <option value="teach">I want to teach / serve as a part-time trade instructor</option>
+              <option value="hire">I want to hire apprentice graduates for my job sites</option>
+              <option value="sponsor">I want to sponsor student toolkits or materials</option>
+              <option value="jobsite">I want to host a student tour or jobsite walk-through</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Trades Offered &amp; Message</label>
+            <textarea class="form-textarea" rows="3" placeholder="Tell us about your trades specialty, company capacity, or timeline..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+            Submit Contractor Partnership Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Operation GO" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Operating for 14+ years in Rochester, NY. Transforming youth futures through vocational trades training, contractor mentorship, paid summer employment, and career readiness.
+          </p>
+          <div class="funder-recognition-badge">
+            <span>Validated by <strong>ESL Federal Credit Union</strong> &amp; <strong>RCSD</strong></span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Programs</div>
+          <div class="footer-links">
+            <a href="programs.html" class="footer-link">Construction &amp; Trades</a>
+            <a href="programs.html" class="footer-link">Summer Youth Employment</a>
+            <a href="programs.html" class="footer-link">Apparel &amp; Sneaker Lab</a>
+            <a href="programs.html" class="footer-link">Video &amp; Media Studio</a>
+            <a href="programs.html" class="footer-link">Real Estate &amp; Finance</a>
+            <a href="programs.html" class="footer-link">Academic Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Organization</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Story &amp; Founder</a>
+            <a href="about.html" class="footer-link">Leadership &amp; Staff</a>
+            <a href="about.html" class="footer-link">Board of Directors</a>
+            <a href="careers.html" class="footer-link">Careers &bull; Open Jobs</a>
+            <a href="impact.html" class="footer-link">Data &amp; Press Coverage</a>
+            <a href="support-us.html" class="footer-link">Sponsorship &amp; 990</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Headquarters</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Operation GO Training Center<br>
+            Rochester, NY 14605<br>
+            Phone: (585) 555-OPGO<br>
+            Email: info@operationgo-rochester.org
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Operation GO Inc. All rights reserved. Registered 501(c)(3) youth workforce organization.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" class="footer-link">Safety Policies</a>
+          <a href="support-us.html" class="footer-link">990 Financials</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer for Job Detail Specifications -->
+  <div class="drawer-overlay" id="jobDrawerOverlay">
+    <div class="drawer-panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <span class="mono-tag">[ ROLE SPECIFICATION ]</span>
+        <button id="closeJobDrawer" style="color: var(--text-muted); font-size: 1.6rem; cursor: pointer;">&times;</button>
+      </div>
+      <div id="jobDrawerContent"></div>
+    </div>
+  </div>
+
+  <!-- Instructor Apply Modal -->
+  <div class="modal-overlay" id="instructorApplyModal">
+    <div class="modal-window">
+      <button class="modal-close-btn">&times;</button>
+      <div class="mono-tag" style="margin-bottom: 12px;">
+        <span class="tag-dot"></span> [ TALENT RECRUITMENT &bull; TRADES INSTRUCTOR ]
+      </div>
+      <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #FFF; line-height: 1.05; margin-bottom: 8px;">
+        JOIN OPERATION GO AS A TRADE INSTRUCTOR
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+        Teach your trade to Rochester youth. High-pay contract rates, flexible hours, and state-vetted workshops.
+      </p>
+
+      <form class="interactive-submit-form">
+        <div class="form-group">
+          <label class="form-label">Position Applying For</label>
+          <input type="text" name="preferred_role" class="form-input" value="Lead Construction &amp; Carpentry Instructor" readonly style="background: rgba(255,255,255,0.05); color: var(--accent-amber); font-weight: 700;">
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" required placeholder="John Miller">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="(585) 555-0144">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-input" required placeholder="john@contractor.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Years of Trade Experience *</label>
+            <select class="form-select" required>
+              <option value="3-5">3 – 5 Years</option>
+              <option value="5-10" selected>5 – 10 Years (Master / Journeyman)</option>
+              <option value="10+">10+ Years (Senior Contractor)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Trades &amp; Certifications</label>
+          <input type="text" class="form-input" placeholder="e.g. Residential Carpentry, OSHA-30, General Contractor License">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Background Check Consent *</label>
+          <label style="display: flex; gap: 10px; font-size: 0.85rem; color: var(--text-secondary); align-items: flex-start; cursor: pointer;">
+            <input type="checkbox" required style="margin-top: 4px;">
+            <span>I confirm that I am willing to undergo standard New York State criminal history and youth-serving facility background checks required for staff instructing minors.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          Submit Instructor Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Student Application Modal (available globally) -->
+  <div class="modal-overlay" id="studentApplyModal">
+    <div class="modal-window">
+      <button class="modal-close-btn">&times;</button>
+      <div class="mono-tag" style="margin-bottom: 12px;">
+        <span class="tag-dot"></span> [ YOUTH ADMISSIONS &bull; AGES 12–18 ]
+      </div>
+      <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #FFF; line-height: 1.05; margin-bottom: 8px;">
+        APPLY FOR OPERATION GO TRAINING
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+        Free vocational enrollment for Rochester students. Hands-on mentorship, tool kits, and paid summer opportunities.
+      </p>
+
+      <form class="interactive-submit-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Student First Name *</label>
+            <input type="text" class="form-input" required placeholder="Marcus">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Student Last Name *</label>
+            <input type="text" class="form-input" required placeholder="Taylor">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Age (Must be 12–18) *</label>
+            <input type="number" class="form-input" min="12" max="18" required placeholder="16">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current School / District *</label>
+            <input type="text" class="form-input" required placeholder="e.g. East High School, RCSD">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Career Track of Interest *</label>
+          <select class="form-select" required>
+            <option value="">Select a track...</option>
+            <option value="construction">Construction &amp; Wood Framing Trades</option>
+            <option value="summer">Summer Youth Employment (Paid Program)</option>
+            <option value="sneaker">Sneaker Reconstruction &amp; Apparel Lab</option>
+            <option value="media">Video Production &amp; Digital Media</option>
+            <option value="business">Youth Entrepreneurship &amp; Pitch Lab</option>
+            <option value="realestate">Real Estate &amp; Financial Literacy</option>
+          </select>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Parent / Guardian Name *</label>
+            <input type="text" class="form-input" required placeholder="Parent or Guardian">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="(585) 555-0199">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          Submit Student Enrollment Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

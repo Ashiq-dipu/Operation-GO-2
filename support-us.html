@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Us &bull; Donate, Sponsorship &amp; Grants | Operation GO Rochester</title>
+  <meta name="description" content="Support Operation GO's youth workforce initiatives in Rochester, NY. Make a tax-deductible donation, sponsor a student builder cohort, or review grant funder packets.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div class="ambient-glow-top"></div>
+  <div class="scroll-backdrop-glow" id="scrollBackdropGlow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <span>★ TAX-DEDUCTIBLE GIVING: Registered 501(c)(3) Non-Profit &bull; EIN Available for Corporate Matching.</span>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Operation GO Home">
+        <img src="images/logo.png" alt="Operation GO" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="careers.html" class="nav-link">
+          Careers <span class="nav-link-badge">HIRING</span>
+        </a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="impact.html" class="nav-link">Impact &amp; Press</a>
+        <a href="support-us.html" class="nav-link active">Support Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-amber btn-sm" data-open-modal="studentApplyModal">Student Apply</button>
+        <a href="careers.html" class="btn btn-primary btn-sm">Teach A Trade</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="mono-tag">[ INVEST IN ROCHESTER'S BUILDERS ]</span>
+        <h1 class="display-title">SUPPORT OPERATION GO</h1>
+        <p class="section-subtitle">
+          Your investment buys real steel-toed boots, commercial timber, cinema cameras, and living-wage summer stipends for youth who build Rochester's tomorrow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Donation Calculator Section -->
+  <section class="section-sm" style="padding-top: 50px;">
+    <div class="container container-sm">
+      <div class="bento-card" style="padding: 40px; border-color: var(--accent-orange-border);">
+        <div class="section-header text-center" style="margin-bottom: 30px;">
+          <span class="mono-tag">[ DIRECT COMMUNITY DONATION ]</span>
+          <h2 class="section-title text-gradient-amber" style="font-size: 2.4rem; margin-top: 8px;">SELECT YOUR IMPACT TIER</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 6px;">
+            100% of community contributions directly fund student tool kits, safety gear, and instructional supplies.
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;">
+          <button class="filter-btn donate-preset-btn active" data-amount="50">$50 &bull; Safety Boots</button>
+          <button class="filter-btn donate-preset-btn" data-amount="150">$150 &bull; Hand Tool Kit</button>
+          <button class="filter-btn donate-preset-btn" data-amount="350">$350 &bull; OSHA Certs</button>
+          <button class="filter-btn donate-preset-btn" data-amount="750">$750 &bull; Student Stipend</button>
+          <button class="filter-btn donate-preset-btn" data-amount="1500">$1,500 &bull; Lumber &amp; Build</button>
+        </div>
+
+        <div style="background: rgba(255, 94, 0, 0.08); border: 1px solid var(--accent-orange-border); border-radius: var(--radius-sm); padding: 18px 22px; margin-bottom: 24px; text-align: center;">
+          <div id="donationImpactSummary" style="color: #FFF; font-size: 0.95rem;">
+            <strong>Impact:</strong> Funds 1 set of certified OSHA steel-toe boots &amp; safety PPE for a new student trainee.
+          </div>
+        </div>
+
+        <form class="interactive-submit-form">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Custom Amount ($ USD)</label>
+              <input type="number" id="customDonateAmount" class="form-input" value="50" min="5">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Frequency</label>
+              <select class="form-select">
+                <option value="once">One-Time Contribution</option>
+                <option value="monthly">Monthly Sustaining Partner</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Donor Full Name *</label>
+              <input type="text" class="form-input" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Donor Email (For Tax Receipt) *</label>
+              <input type="email" class="form-input" required placeholder="jane@example.com">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1.05rem;">
+            Complete Secure Tax-Deductible Contribution
+          </button>
+          <p style="text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">
+            Operation GO Inc. is an exempt 501(c)(3) public charity. Contributions are tax-deductible to the extent allowed by law.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Sponsorship Packages -->
+  <section class="section section-surface" id="sponsorship">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="mono-tag">[ CORPORATE &amp; TRADES SPONSORSHIP ]</span>
+        <h2 class="section-title text-gradient-amber" style="margin-top: 10px;">PARTNER TIERS FOR LOCAL BUSINESSES</h2>
+        <p class="section-subtitle">
+          Align your company's community social responsibility with hands-on youth workforce development in Rochester.
+        </p>
+      </div>
+
+      <div class="bento-programs-grid">
+        <!-- Tier 1 -->
+        <div class="bento-card bento-span-4" style="padding: 36px 28px;">
+          <span class="mono-tag" style="margin-bottom: 12px;">TIER 01 &bull; APPRENTICE LEVEL</span>
+          <div style="font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: #FFF; margin: 8px 0;">$2,500 <span style="font-size: 1rem; color: var(--text-muted);">/ Year</span></div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Equips 5 student trainees with certified hand toolboxes, safety boots, and OSHA credentials.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 28px;">
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> Logo on Operation GO sponsor wall</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> Recognition in Annual Impact Report</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> 2 VIP tickets to Summer Showcase</li>
+          </ul>
+          <a href="contact.html?subject=Sponsorship" class="btn btn-secondary" style="width: 100%;">Inquire for Tier 1</a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="bento-card bento-span-4" style="padding: 36px 28px; border-color: var(--accent-orange-border); background: var(--bg-card-hover);">
+          <span class="mono-tag" style="background: var(--accent-amber); color: #FFF; margin-bottom: 12px;">TIER 02 &bull; MASTER BUILDER</span>
+          <div style="font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: var(--accent-amber); margin: 8px 0;">$7,500 <span style="font-size: 1rem; color: var(--text-muted);">/ Year</span></div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Sponsors an entire 6-student summer build crew and covers living-wage stipends for community installations.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 28px;">
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> Company plaque on student-built public gazebo</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> Logo on student uniforms and video credits</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> First interview priority for apprentice hiring</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-amber);">✓</span> Employee volunteer workshop days</li>
+          </ul>
+          <a href="contact.html?subject=Sponsorship" class="btn btn-primary" style="width: 100%;">Inquire for Tier 2</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="bento-card bento-span-4" style="padding: 36px 28px;">
+          <span class="mono-tag blue" style="margin-bottom: 12px;">TIER 03 &bull; COMMUNITY VISIONARY</span>
+          <div style="font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: #FFF; margin: 8px 0;">$15,000+ <span style="font-size: 1rem; color: var(--text-muted);">/ Year</span></div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Title sponsorship of a specialized training lab (e.g. The [Company Name] Carpentry Workshop or Media Suite).
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 28px;">
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-cyan);">✓</span> Permanent facility naming rights</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-cyan);">✓</span> Featured keynote stage address at Summer Showcase</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--accent-cyan);">✓</span> Dedicated press release and WHAM13 media inclusion</li>
+          </ul>
+          <a href="contact.html?subject=Sponsorship" class="btn btn-secondary" style="width: 100%;">Inquire for Visionary</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grants & Institutional Funder Info (990, Budget Snapshot) -->
+  <section class="section">
+    <div class="container">
+      <div class="founder-story-grid">
+        <div>
+          <span class="mono-tag">[ INSTITUTIONAL PHILANTHROPY ]</span>
+          <h2 class="section-title text-gradient-amber" style="margin: 12px 0 16px;">GRANTS &amp; FOUNDATION INFORMATION</h2>
+          <p class="story-lead">
+            Operation GO adheres to the highest standards of non-profit fiscal transparency, audit oversight, and program outcome documentation.
+          </p>
+          <p class="story-text" style="margin-top: 14px;">
+            We welcome inquiries from community foundations, municipal agencies, corporate grant officers, and family trusts. Review our institutional one-pager, audited budget summaries, and IRS Form 990 documentation below.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+            <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 16px 20px; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: #FFF; display: block;">Operation GO — Institutional One-Pager (PDF)</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">Overview, 14-year data, budget allocation</span>
+              </div>
+              <a href="#" class="btn btn-outline-amber btn-sm" onclick="alert('Download started: Operation_GO_Institutional_Overview.pdf'); return false;">Download PDF</a>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 16px 20px; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: #FFF; display: block;">IRS Form 990 &amp; 501(c)(3) Determination Letter</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">Official IRS tax-exempt verification</span>
+              </div>
+              <a href="#" class="btn btn-secondary btn-sm" onclick="alert('Download started: Operation_GO_Form_990_Verification.pdf'); return false;">Download PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- In-Kind Tool & Materials Donation Wishlist -->
+        <div class="bento-card" style="padding: 36px;">
+          <span class="mono-tag">[ MATERIAL DONATIONS ]</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: #FFF; margin: 12px 0 16px;">
+            TOOL &amp; LUMBER WISHLIST
+          </h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Have surplus building materials or commercial contractor tools in good working condition? We accept in-kind equipment donations with official non-profit receipts.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-secondary);">
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Framing Lumber:</strong> 2x4, 2x6, 4x4 pressure treated posts, plywood sheets</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Power Tools:</strong> Miter saws, circular saws, cordless impact drills</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>PPE:</strong> Safety glasses, leather work gloves, steel-toe boots (all sizes)</span>
+            </div>
+            <div class="dual-bullet">
+              <span class="dual-bullet-icon">▸</span>
+              <span><strong>Design Lab:</strong> Industrial sewing machines, heavy leather, canvas</span>
+            </div>
+          </div>
+
+          <a href="contact.html?subject=InKind" class="btn btn-outline-amber" style="margin-top: 24px; width: 100%;">Coordinate In-Kind Dropoff →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.png" alt="Operation GO" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Operating for 14+ years in Rochester, NY. Transforming youth futures through vocational trades training, contractor mentorship, paid summer employment, and career readiness.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Programs</div>
+          <div class="footer-links">
+            <a href="programs.html" class="footer-link">Construction &amp; Trades</a>
+            <a href="programs.html" class="footer-link">Summer Youth Employment</a>
+            <a href="programs.html" class="footer-link">Apparel &amp; Sneaker Lab</a>
+            <a href="programs.html" class="footer-link">Video &amp; Media Studio</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Giving &amp; Grants</div>
+          <div class="footer-links">
+            <a href="support-us.html" class="footer-link">Donate Online</a>
+            <a href="support-us.html" class="footer-link">Corporate Tiers</a>
+            <a href="support-us.html" class="footer-link">Grants &amp; 990</a>
+            <a href="careers.html" class="footer-link">Instructor Hiring</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Headquarters</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Operation GO Training Center<br>
+            Rochester, NY 14605<br>
+            Phone: (585) 555-OPGO
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Operation GO Inc. All rights reserved. Registered 501(c)(3) youth workforce organization.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" class="footer-link">Safety Policies</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Student Application Modal -->
+  <div class="modal-overlay" id="studentApplyModal">
+    <div class="modal-window">
+      <button class="modal-close-btn">&times;</button>
+      <div class="mono-tag" style="margin-bottom: 12px;">
+        <span class="tag-dot"></span> [ YOUTH ADMISSIONS &bull; AGES 12–18 ]
+      </div>
+      <h3 style="font-family: var(--font-display); font-size: 2.2rem; color: #FFF; line-height: 1.05; margin-bottom: 8px;">
+        APPLY FOR OPERATION GO TRAINING
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+        Free vocational enrollment for Rochester students. Hands-on mentorship, tool kits, and paid summer opportunities.
+      </p>
+
+      <form class="interactive-submit-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Student First Name *</label>
+            <input type="text" class="form-input" required placeholder="Marcus">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Student Last Name *</label>
+            <input type="text" class="form-input" required placeholder="Taylor">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Age (Must be 12–18) *</label>
+            <input type="number" class="form-input" min="12" max="18" required placeholder="16">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current School / District *</label>
+            <input type="text" class="form-input" required placeholder="e.g. East High School, RCSD">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Career Track of Interest *</label>
+          <select class="form-select" required>
+            <option value="construction">Construction &amp; Wood Framing Trades</option>
+            <option value="summer">Summer Youth Employment (Paid Program)</option>
+            <option value="sneaker">Sneaker Reconstruction &amp; Apparel Lab</option>
+            <option value="media">Video Production &amp; Digital Media</option>
+            <option value="business">Youth Entrepreneurship &amp; Pitch Lab</option>
+            <option value="realestate">Real Estate &amp; Financial Literacy</option>
+          </select>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Parent / Guardian Name *</label>
+            <input type="text" class="form-input" required placeholder="Parent or Guardian">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Phone Number *</label>
+            <input type="tel" class="form-input" required placeholder="(585) 555-0199">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          Submit Student Enrollment Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
